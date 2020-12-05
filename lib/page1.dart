@@ -54,10 +54,21 @@ class SecondRoute extends StatelessWidget {
                   ],
                 ),
               )),
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: RaisedButton(onPressed: MainMenu,
+                  child: Text('Exit Game'),
+                ),
+              ),
             ],
           ),
         ),
       ),
     );
+  }
+  void MainMenu() {
+    setState(() {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => MyLevel()));
+    });
   }
 }

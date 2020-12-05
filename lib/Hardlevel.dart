@@ -49,7 +49,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text('Hard Level'),
                 ),
               ),
-
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: RaisedButton(onPressed: MainMenu,
+                  child: Text('Exit Game'),
+                ),
+              ),
             ],
           ),
         )
@@ -61,4 +66,5 @@ class _MyHomePageState extends State<MyHomePage> {
       Navigator.push(context, MaterialPageRoute(builder: (context) => MyLevel()));
     });
   }
+  
 }
