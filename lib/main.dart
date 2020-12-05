@@ -1,5 +1,6 @@
 import 'package:dice_2ndsesional/page1.dart';
 import 'package:dice_2ndsesional/page2.dart';
+import 'package:dice_2ndsesional/initialRouter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,17 +15,17 @@ class FirstRoute extends StatelessWidget{
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.blueGrey,
           appBar: AppBar(
-            title: Text('Dice Game'),
+            title: Text('Dice Game By Smama'),
             flexibleSpace: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: <Color>[
-                      Colors.blue.shade900,
-                      Colors.lightBlue
+                      Colors.teal,
+                      Colors.cyanAccent,
                     ]
                 ),
               ),
@@ -43,7 +44,7 @@ class FirstRoute extends StatelessWidget{
                   onTap: (){
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SecondRoute()),
+                      MaterialPageRoute(builder: (context) => InitialRoute()),
                     );
                   },
                 ),

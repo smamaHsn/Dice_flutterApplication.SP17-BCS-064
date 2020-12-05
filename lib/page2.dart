@@ -48,7 +48,7 @@ class _DicePageState extends State<DicePage> {
                 onPressed: (){
                   diceOne();
                 },
-                child: Text('Click to Play'),
+                child: Text('Click Here'),
               ),
             ),
           ],
