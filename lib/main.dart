@@ -1,5 +1,6 @@
 import 'package:dice_2ndsesional/page1.dart';
 import 'package:dice_2ndsesional/page2.dart';
+import 'package:dice_2ndsesional/Hardlevel.dart';
 import 'package:dice_2ndsesional/initialRouter.dart';
 import 'package:flutter/material.dart';
 
