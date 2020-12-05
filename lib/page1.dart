@@ -70,5 +70,44 @@ class SecondRoute extends StatelessWidget {
     setState(() {
       Navigator.push(context, MaterialPageRoute(builder: (context) => MyLevel()));
     });
+    Padding(
+      padding: const EdgeInsets.only(top: 60),
+      child: RaisedButton(
+        child: Text('Check Winner Dice'),
+        onPressed:() {
+          showAlertDialog(context);
+        },
+      ),
+    ),
+  }
+
+}
+showAlertDialog(BuildContext context)
+{
+  if(randomIntForDiceOne >= randomIntForDiceTwo) {
+    AlertDialog alert = AlertDialog(
+      title: Text("Winner Dice :", style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold, color: Colors.blue),),
+      content: Text("Dice One is Greater ", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0, color: Colors.indigoAccent),),
+    );
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
+  }
+  if(randomIntForDiceOne < randomIntForDiceTwo) {
+    AlertDialog alert = AlertDialog(
+      title: Text("Winner Dice :", style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold, color: Colors.yellow),),
+      content: Text("Dice Two is Greater ", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0, color: Colors.cyanAccent),),
+    );
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
   }
 }
