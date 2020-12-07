@@ -4,6 +4,8 @@ A new Flutter application.
 
 ## Getting Started
 All Screenshots of my Application
+## App Icon Changed
+![Screenshot_20201207_172308](https://user-images.githubusercontent.com/73903186/101350603-0a69ba00-38b1-11eb-8e82-12dcb11681bc.jpg)
 
 ## Home Screen
 ![Screenshot_20201207_170829](https://user-images.githubusercontent.com/73903186/101349449-33894b00-38af-11eb-88bb-2168644a95c2.jpg)
