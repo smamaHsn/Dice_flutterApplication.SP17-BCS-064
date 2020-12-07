@@ -23,33 +23,33 @@ class _easylevelState extends State<easylevel> {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: <Color>[
-                      Colors.teal,
+                      Colors.indigoAccent,
                       Colors.cyanAccent,
                     ]
                 ),
               ),
             ),
           ),
-          drawer: Drawer(
-            child: ListView(
-              children: <Widget>[
-                ListTile(
-                  title: SafeArea(
-                    child: Text('About Us',style: TextStyle(
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.w400
-                    ),),
-                  ),
-                  onTap: (){
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => InitialRoute()),
-                    // );
-                  },
-                ),
-              ],
-            ),
-          ),
+          // drawer: Drawer(
+          //   child: ListView(
+          //     children: <Widget>[
+          //       ListTile(
+          //         title: SafeArea(
+          //           child: Text('About Us',style: TextStyle(
+          //               fontSize: 20.0,
+          //               fontWeight: FontWeight.w400
+          //           ),),
+          //         ),
+          //         onTap: (){
+          //           // Navigator.push(
+          //           //   context,
+          //           //   MaterialPageRoute(builder: (context) => InitialRoute()),
+          //           // );
+          //         },
+          //       ),
+          //     ],
+          //   ),
+          // ),
          body: DicePage(),
         ),
       ),

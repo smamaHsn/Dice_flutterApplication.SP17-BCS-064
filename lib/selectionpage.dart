@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'main.dart';
 import 'dart:io';
 import 'package:dice_2ndsesional/easylevel.dart';
+import 'package:dice_2ndsesional/Hardlevelfuntionality.dart';
+import 'AboutUs.dart';
 
 class selectionpage extends StatefulWidget {
   @override
@@ -17,24 +19,7 @@ class _selectionpageState extends State<selectionpage> {
           title: Text("Select The level"),
           ),
         drawer: Drawer(
-          child: ListView(
-            children: <Widget>[
-              ListTile(
-                title: SafeArea(
-                  child: Text('About Us',style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.w400
-                  ),),
-                ),
-                onTap: (){
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => InitialRoute()),
-                  // );
-                },
-              ),
-            ],
-          ),
+         child: aboutus(),
         ),
         backgroundColor: Colors.blueGrey,
         body: SafeArea(
@@ -71,10 +56,10 @@ class _selectionpageState extends State<selectionpage> {
                   child: RaisedButton(
                       color: Color(0xFF536DFE),
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => hard()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => hardlevel()),
+                      );
                     },
                     child: Text(
                       " Hard Mode ",
